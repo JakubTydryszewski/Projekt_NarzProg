@@ -11,8 +11,8 @@ RUN apt-get update && apt-get install -y \
     libjpeg-dev \
     libfreetype6-dev \
     && docker-php-ext-configure gd --with-freetype --with-jpeg \
-    && docker-php-ext-install gd mysqli \
-    
+    && docker-php-ext-install gd mysqli
+
 # Enable mod_rewrite for Apache
 RUN a2enmod rewrite
 
