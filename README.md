@@ -1,4 +1,4 @@
-# Docker Apache + PHP with MariaDB
+# Docker Apache + PHP with MariaDB application
 
 This project sets up a web application using Docker with an Apache + PHP container and a MySQL/MariaDB database container.
 
