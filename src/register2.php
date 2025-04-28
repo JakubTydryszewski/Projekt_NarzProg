@@ -21,7 +21,8 @@
             $result = $select_stmt->get_result();
 
             if ($result->num_rows > 0) {
-                echo "Nazwa użytkownika jest zajęta";
+                $_SESSION['user_added_msg'] = "<p style='color:red;'>Nazwa użytkownika jest zajęta</p>";
+                header('Location: register.php');
                 exit();
             }
 

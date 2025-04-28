@@ -8,7 +8,7 @@
         echo "Error: " . $conn->connect_errno;
     } else {
         // Prepare the statement
-        $stmt = $conn->prepare("SELECT id, username, password FROM users WHERE username=?"); // Specify columns
+        $stmt = $conn->prepare("SELECT id, username, password FROM users WHERE username=?");
 
         if ($stmt === false) {
             echo "Failed to prepare statement: " . $conn->error;
@@ -27,7 +27,7 @@
 
                 if ($num_rows > 0) {
                     // Bind the result variables
-                    $stmt->bind_result($id, $username, $hashed_passwd); // Adjust based on your table structure
+                    $stmt->bind_result($id, $username, $hashed_passwd);
 
                     // Fetch the result
                     if ($stmt->fetch()) {
