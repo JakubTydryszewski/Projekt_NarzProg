@@ -1,13 +1,11 @@
-# docker-web-app/docker-web-app/README.md
-
-# Docker Web Application
+# Docker Apache + PHP with MariaDB
 
 This project sets up a web application using Docker with an Apache + PHP container and a MySQL/MariaDB database container.
 
 ## Project Structure
 
 ```
-docker-web-app
+Projekt Narz_prog
 ├── src
 │   ├── index.php
 │   ├── connect.php
@@ -30,7 +28,7 @@ docker-web-app
 1. **Clone the Repository**
    ```bash
    git clone <repository-url>
-   cd docker-web-app
+   cd "Projekt Narz_prog"
    ```
 
 2. **Build and Run the Containers**
