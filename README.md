@@ -27,7 +27,7 @@ Projekt Narz_prog
 
 1. **Clone the Repository**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/JakubTydryszewski/Projekt_NarzProg
    cd "Projekt Narz_prog"
    ```
 
