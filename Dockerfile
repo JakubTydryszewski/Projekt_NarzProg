@@ -9,6 +9,10 @@ RUN a2enmod rewrite
 # Copy application source code to the Apache document root
 COPY src/ /var/www/html/
 
+# Copy the initialization script
+COPY init.sh /init.sh
+RUN chmod +x /init.sh
+
 # Set permissions for the Apache server
 RUN chown -R www-data:www-data /var/www/html/ && \
     chmod -R 755 /var/www/html/
@@ -16,5 +20,5 @@ RUN chown -R www-data:www-data /var/www/html/ && \
 # Expose port 80
 EXPOSE 80
 
-# Start Apache server
-CMD ["apache2-foreground"]
+# Use the custom initialization script
+CMD ["/init.sh"]

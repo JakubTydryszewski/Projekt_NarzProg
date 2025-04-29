@@ -17,7 +17,8 @@ Projekt Narz_prog
 │   ├── style1.css
 │   ├── style_login.css
 │   ├── style_register.css
-│   └── users.sql
+│   ├── users.sql
+|   └── init.sh
 ├── docker-compose.yml
 ├── Dockerfile
 └── README.md
