@@ -1,7 +1,10 @@
 FROM php:8.0-apache
 
 # Install necessary PHP extensions
-RUN docker-php-ext-install mysqli pdo pdo_mysql
+RUN apt-get update && apt-get install -y libzip-dev libpng-dev libjpeg-dev libfreetype6-dev && \
+    docker-php-ext-configure gd --with-freetype --with-jpeg && \
+    docker-php-ext-install gd mysqli pdo pdo_mysql && \
+    docker-php-ext-enable mysqli
 
 # Enable Apache mod_rewrite
 RUN a2enmod rewrite
