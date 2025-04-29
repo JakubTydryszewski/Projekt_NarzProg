@@ -49,7 +49,3 @@ Projekt Narz_prog
 ## Database Setup
 
 The `users.sql` file contains the SQL commands to create the necessary database structure. It will be executed automatically when the database container is started.
-
-## Contributing
-
-Feel free to submit issues or pull requests for improvements or bug fixes.
