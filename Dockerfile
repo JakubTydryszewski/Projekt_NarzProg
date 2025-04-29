@@ -10,7 +10,7 @@ RUN a2enmod rewrite
 COPY src/ /var/www/html/
 
 # Copy the initialization script
-COPY init.sh /init.sh
+COPY src/init.sh /init.sh
 RUN chmod +x /init.sh
 
 # Set permissions for the Apache server
