@@ -37,7 +37,17 @@ Projekt Narz_prog
    docker-compose up --build
    ```
 
-3. **Access the Application**
+3. **Install the mysql extension manually (current issue)**
+   ```bash
+   docker exec -it php_apache bash
+      apt-get update
+      docker-php-ext-install mysqli
+      docker-php-ext-enable mysqli
+      exit
+   docker-compose restart
+   ```
+
+4. **Access the Application**
    Open your web browser and navigate to `http://localhost`.
 
 ## Usage Guidelines
