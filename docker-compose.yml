@@ -2,6 +2,8 @@ version: '3.8'
 
 services:
   web:
+    platform: linux/amd64
+    build: .
     image: php:8.0-apache
     container_name: php_apache
     ports:
@@ -12,6 +14,7 @@ services:
       - app-network
 
   db:
+    platform: linux/amd64
     image: mysql:5.7
     container_name: mysql_db
     environment:
