@@ -37,7 +37,7 @@ Projekt Narz_prog
    docker-compose up --build
    ```
 
-3. **Install the mysql extension manually (current issue)**
+3. **Install the mysql extension manually (if the MySQL/MariaDB database doesn't work properly)**
    ```bash
    docker exec -it php_apache bash
       apt-get update
