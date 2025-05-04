@@ -17,8 +17,7 @@ Projekt Narz_prog
 │   ├── style1.css
 │   ├── style_login.css
 │   ├── style_register.css
-│   ├── users.sql
-|   └── init.sh
+|   └── users.sql
 ├── docker-compose.yml
 ├── Dockerfile
 └── README.md
@@ -37,17 +36,7 @@ Projekt Narz_prog
    docker-compose up --build
    ```
 
-3. **Install the mysql extension manually (if the MySQL/MariaDB database doesn't work properly)**
-   ```bash
-   docker exec -it php_apache bash
-      apt-get update
-      docker-php-ext-install mysqli
-      docker-php-ext-enable mysqli
-      exit
-   docker-compose restart
-   ```
-
-4. **Access the Application**
+3. **Access the Application**
    Open your web browser and navigate to `http://localhost`.
 
 ## Usage Guidelines
