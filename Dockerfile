@@ -24,4 +24,4 @@ RUN chown -R www-data:www-data /var/www/html/ && \
 EXPOSE 80
 
 # Use the custom initialization script
-CMD ["/init.sh"]
+CMD ["/src/init.sh"]
