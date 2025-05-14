@@ -34,17 +34,17 @@
                         // Verify the password
                         if (password_verify($plaintext_passwd, $hashed_passwd)) {
                             $_SESSION['username'] = $username;
-                            header('Location: index.php');
+                            header('Location: ../html/index.php');
                             exit();
                         } else {
                             $_SESSION['invalid_passwd_msg'] = "<p style='color:red;'>Wprowadzono nieprawidłowy login lub hasło!</p>";
-                            header('Location: login.php');
+                            header('Location: ../html/login.php');
                             exit();
                         }
                     } 
                 } else {
                     $_SESSION['invalid_passwd_msg'] = "<p style='color:red;'>Wprowadzono nieprawidłowy login lub hasło!</p>";
-                    header('Location: login.php');
+                    header('Location: ../html/login.php');
                     exit();
                 }
             } else {

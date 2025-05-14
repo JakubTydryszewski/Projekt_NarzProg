@@ -6,7 +6,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style1.css">
+        <link rel="stylesheet" href="../css/style1.css">
         <title>Strona startowa</title>
     </head>
     <body>
@@ -17,11 +17,11 @@
             }
         ?>
         <header>
-            <a href="index.php"><img src="arch_logo.png" alt="arch_logo" id="arch_logo"></a>
+            <a href="index.php"><img src="../arch_logo.png" alt="arch_logo" id="arch_logo"></a>
             <h1 id="header">Serwer Arch Linux</h1>
             <?php
                 if (isset($_SESSION['username'])){
-                    echo "<p id='zaloguj'>Zalogowany użytkownik: ".$_SESSION['username']."<br><a href='logout.php'>wyloguj się</a></p>";
+                    echo "<p id='zaloguj'>Zalogowany użytkownik: ".$_SESSION['username']."<br><a href='../php/logout.php'>wyloguj się</a></p>";
                 } else {
                     echo "<a href='login.php'><p id='zaloguj'>zaloguj się</p></a>";
                 }
@@ -30,7 +30,7 @@
         <nav>
             <h3>Spis treści</h3>
             <ul>
-                <li><a href="sklep.html">Projekt narzędzia programistyczne</a></li>
+                <li><a href="ftp_server.php">Serwer FTP (work in progress)</a></li>
             </ul>
         </nav>
         <section>

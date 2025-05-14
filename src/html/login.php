@@ -6,18 +6,18 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style_login.css">
+        <link rel="stylesheet" href="../css/style_login.css">
         <title>Logowanie</title>
     </head>
     <body>
         <header>
-            <a href="index.php"><img src="arch_logo.png" alt="arch_logo" id="arch_logo"></a>
+            <a href="index.php"><img src="../arch_logo.png" alt="arch_logo" id="arch_logo"></a>
             <h1 id="header">Serwer Arch Linux</h1>
             <a href="login.php"><p id="zaloguj">zaloguj się</p></a>
         </header>
         <section id="logowanie">
             <h3>Zaloguj się</h3>
-            <form method="POST" action="login2.php">
+            <form method="POST" action="../php/login2.php">
                 Login:<br>
                 <input type="text" name="login" required><br><br>
                 Hasło:<br>

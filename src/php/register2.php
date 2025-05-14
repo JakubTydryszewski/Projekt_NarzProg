@@ -22,7 +22,7 @@
 
             if ($result->num_rows > 0) {
                 $_SESSION['user_added_msg'] = "<p style='color:red;'>Nazwa użytkownika jest zajęta</p>";
-                header('Location: register.php');
+                header('Location: ../html/register.php');
                 exit();
             }
 
@@ -39,7 +39,7 @@
                     "<script>
                         window.alert('Użytkownik dodany prawidłowo! Zaloguj się');
                     </script>";
-                    header('Location: index.php');
+                    header('Location: ../html/index.php');
                     exit();
                 } else {
                     echo "Nie udało się wykonać zapytania: " . $insert_stmt->error;
