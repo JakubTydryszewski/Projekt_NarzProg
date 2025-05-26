@@ -43,7 +43,7 @@ Projekt Narz_prog
    ```
 
 3. **Access the Application**
-   Open your web browser and navigate to `http://localhost`.
+   Open your web browser and navigate to `http://localhost/html/index.php`. (temporary solution)
 
 ## Usage Guidelines
 
