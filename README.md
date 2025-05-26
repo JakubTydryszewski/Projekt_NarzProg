@@ -7,17 +7,23 @@ This project sets up a web application using Docker with an Apache + PHP contain
 ```
 Projekt Narz_prog
 ├── src
-│   ├── index.php
-│   ├── connect.php
-│   ├── login.php
-│   ├── login2.php
-│   ├── logout.php
-│   ├── register.php
-│   ├── register2.php
-│   ├── style1.css
-│   ├── style_login.css
-│   ├── style_register.css
-|   └── users.sql
+│   ├── html
+│   │   ├── index.php
+│   │   ├── login.php
+│   │   ├── ftp_server.php
+│   │   └── register.php
+│   ├── php
+│   │   ├── connect.php
+│   │   ├── logout.php
+│   │   ├── login2.php
+│   │   └── register2.php
+│   ├── css
+│   │   ├── style1.css
+│   │   ├── style2.css
+│   │   ├── style_login.css
+│   │   └── style_register.css
+│   ├── arch_logo.png
+│   └── users.sql
 ├── docker-compose.yml
 ├── Dockerfile
 └── README.md
