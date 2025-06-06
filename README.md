@@ -13,7 +13,7 @@ Projekt Narz_prog
 │   │   ├── ftp_server.php
 │   │   └── register.php
 │   ├── php
-│   │   ├── connect.php
+│   ├── php
 │   │   ├── logout.php
 │   │   ├── login2.php
 │   │   └── register2.php
@@ -24,6 +24,9 @@ Projekt Narz_prog
 │   │   └── style_register.css
 │   ├── arch_logo.png
 │   └── users.sql
+├── .github
+│   └── workflows
+│       └── deploy.yml
 ├── docker-compose.yml
 ├── Dockerfile
 └── README.md
