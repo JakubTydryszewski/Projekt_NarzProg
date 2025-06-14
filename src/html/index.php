@@ -30,7 +30,7 @@
         <nav>
             <h3>Spis treści</h3>
             <ul>
-                <li><a href="ftp_server.php">Serwer FTP (work in progress)</a></li>
+                <li><a href="serwis.php">Serwer FTP (wymaga zalogowania)</a></li>
             </ul>
         </nav>
         <section>
