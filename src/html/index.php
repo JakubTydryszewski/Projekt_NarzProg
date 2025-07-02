@@ -18,7 +18,7 @@
         ?>
         <header>
             <a href="index.php"><img src="../arch_logo.png" alt="arch_logo" id="arch_logo"></a>
-            <h1 id="header">Serwer Arch Linux test</h1>
+            <h1 id="header">Serwer Arch Linux Wojtek</h1>
             <?php
                 if (isset($_SESSION['username'])){
                     echo "<p id='zaloguj'>Zalogowany użytkownik: ".$_SESSION['username']."<br><a href='../php/logout.php'>wyloguj się</a></p>";
